@@ -72,7 +72,12 @@ composer intall
 php artisan migrate
 php artisan db:seed
 php artisan key
+npm install && npm run dev
 
 ## Mock Data (Manual Seeding list)
 php artisan tinker
 \App\Models\Contact::factory(10)->create();
+
+## login
+    email = test@test.com
+    password = admin123

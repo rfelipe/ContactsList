@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
         // Criando um usuário com senha hasheada
         User::factory()->create([
             'name' => 'admin',
-            'email' => 'test@example.com',
+            'email' => 'test@test.com',
             'password' => Hash::make('admin123'),
         ]);
     }
