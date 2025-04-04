@@ -3,7 +3,7 @@
 
 @section('content')
 <header class="py-10 text-center">
-    <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-100">Contacts List</h1>
+    <h1 class="text-3xl font-bold text-gray-800">Contacts List</h1>
 
         <a href="{{ route('contacts.create') }}" class="inline-block mt-4 px-4 py-2 bg-green-500 hover:bg-green-700 text-white font-bold rounded-md shadow-md">
             Create Contact
@@ -19,12 +19,12 @@
     @else
         <ul class="space-y-6">
             @foreach($contacts as $contact)
-                <li class="bg-white dark:bg-gray-700 shadow rounded-md p-4 grid grid-cols-3 gap-4 items-center">
+                <li class="bg-white shadow rounded-md p-4 grid grid-cols-3 gap-4 items-center">
                     <div class="col-span-1">
-                        <span class="font-medium text-gray-800 dark:text-gray-100">{{ $contact->name }}</span>
+                        <span class="font-medium text-gray-800">{{ $contact->name }}</span>
                     </div>
                     <div class="col-span-1">
-                        <span class="text-gray-600 dark:text-gray-300">- {{ $contact->email }}</span>
+                        <span class="text-gray-600">- {{ $contact->email }}</span>
                     </div>
                     <div class="col-span-1 justify-self-end">
                             <a href="{{ route('contacts.show', $contact->id) }}" target=""

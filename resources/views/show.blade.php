@@ -3,7 +3,7 @@
 
 @section('content')
 <header class="py-10 text-center">
-    <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-100">Contact Details</h1>
+    <h1 class="text-3xl font-bold text-gray-800">Contact Details</h1>
     <a href="{{ route('contacts.index') }}"
        class="inline-block mt-4 px-4 py-2 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded-md shadow-md">
         < Back to Contacts List
@@ -12,18 +12,18 @@
 
 <div class="max-w-7xl mx-auto px-4 py-6">
     @if(isset($contact))
-        <div class="bg-white dark:bg-gray-800 shadow rounded-md p-6">
+        <div class="bg-white shadow rounded-md p-6">
             <div class="mb-4">
-                <strong class="font-medium text-gray-800 dark:text-gray-100">Name:</strong>
-                <span class="text-gray-600 dark:text-gray-300">{{ $contact->name }}</span>
+                <strong class="font-medium text-gray-800">Name:</strong>
+                <span class="text-gray-600">{{ $contact->name }}</span>
             </div>
             <div class="mb-4">
-                <strong class="font-medium text-gray-800 dark:text-gray-100">Contact:</strong>
-                <span class="text-gray-600 dark:text-gray-300">{{ $contact->contact }}</span>
+                <strong class="font-medium text-gray-800">Contact:</strong>
+                <span class="text-gray-600">{{ $contact->contact }}</span>
             </div>
             <div>
-                <strong class="font-medium text-gray-800 dark:text-gray-100">Email:</strong>
-                <span class="text-gray-600 dark:text-gray-300">{{ $contact->email ?? 'N/A' }}</span>
+                <strong class="font-medium text-gray-800">Email:</strong>
+                <span class="text-gray-600">{{ $contact->email ?? 'N/A' }}</span>
             </div>
         </div>
 
