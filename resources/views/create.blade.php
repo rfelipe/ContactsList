@@ -29,13 +29,15 @@
         <div class="mb-4">
             <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name:</label>
             <input type="text" id="name" name="name" value="{{ old('name') }}"
+                    minlength="5"
                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                    required>
         </div>
 
         <div class="mb-4">
             <label for="contact" class="block text-gray-700 text-sm font-bold mb-2">Contact:</label>
-            <input type="text" id="contact" name="contact" value="{{ old('contact') }}"
+            <input type="number" id="contact" name="contact" value="{{ old('contact') }}"
+                    pattern="\d{9}" maxlength="9"
                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                    required>
         </div>
